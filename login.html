@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1 data-aos="fade-down" data-aos-duration="900">Faça login<br> para poder entrar no nosso site</h1>
+            <img src="assets/img/astronaut-animate.svg" class="astro" alt="Astronauta"  data-aos="fade-right"  data-aos-duration="900">
+        </div>
+        <form action="login.php" method="post">
+        <div class="right-login" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="E-mail" required>
+                </div>
+
+                <div class="textfield">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+
+             <input class="btn-login" type="submit"  name="submit" value="Login">
+
+            </div>
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
